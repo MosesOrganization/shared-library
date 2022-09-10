@@ -5,10 +5,10 @@ pipeline {
 	   maven 'maven'
 	}
 	stages {
-	    stage("Tools initialixation") {
+	    stage("Tools initialization") {
 	        steps {
 	            sh 'mvn --version'
-	            sh 'jave -version'
+	            sh 'java -version'
 	        }
 	    }
 	    stage("Checkout Code") {
